@@ -4,8 +4,8 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "clear search highlights" })
 
 -- Window Management
-keymap.set("n", "<leader>vs", "<C-w>v", { desc = "splits window vertically" })
-keymap.set("n", "<leader>hs", "<C-w>s", { desc = "splits window horizontally" })
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "splits window vertically" })
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = "splits window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "make window splits equal size" })
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
