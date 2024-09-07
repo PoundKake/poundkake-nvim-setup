@@ -1,13 +1,17 @@
 return {
-	"folke/tokyonight.nvim",
+	"scottmckendry/cyberdream.nvim",
 	priority = 1000,
 	config = function()
 		local transparent = true
-		require("tokyonight").setup({
-			style = "night",
+		local theme = "default"
+		local borderless_telescope = true
+
+		require("cyberdream").setup({
 			transparent = transparent,
+			borderless_telescope = borderless_telescope,
+			theme = { variant = theme },
 		})
 
-		vim.cmd("colorscheme tokyonight")
+		vim.cmd("colorscheme cyberdream")
 	end,
 }
