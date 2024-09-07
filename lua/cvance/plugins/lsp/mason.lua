@@ -44,8 +44,8 @@ return {
 				"texlab",
 				"textlsp",
 				"sqlls",
-				"vuels",
 				"yamlls",
+				"volar",
 			},
 		})
 
