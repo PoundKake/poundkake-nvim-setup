@@ -2,13 +2,13 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
-opt.background = 'dark'
+opt.background = "dark"
 opt.number = true
 opt.relativenumber = true
-opt.syntax = 'enable'
+opt.syntax = "enable"
 opt.cursorline = true
-opt.mouse = 'a'
-opt.encoding = 'utf-8'
+opt.mouse = "a"
+opt.encoding = "utf-8"
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
