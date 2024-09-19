@@ -46,6 +46,10 @@ return {
 				"sqlls",
 				"yamlls",
 				"volar",
+				"ts_ls",
+				"vuels",
+				-- "ruby_lsp",
+				-- "solargraph",
 			},
 		})
 
@@ -56,7 +60,7 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"pylint",
-				"eslint_d",
+				-- "rubocop", -- ruby formatter/linter
 			},
 		})
 	end,
