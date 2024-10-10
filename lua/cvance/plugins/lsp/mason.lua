@@ -47,7 +47,7 @@ return {
 				"yamlls",
 				"volar",
 				"ts_ls",
-				"vuels",
+				-- "vuels",
 				-- "ruby_lsp",
 				-- "solargraph",
 			},
