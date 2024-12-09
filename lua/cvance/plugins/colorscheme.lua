@@ -1,19 +1,13 @@
 return {
-	"navarasu/onedark.nvim",
+	"sainnhe/sonokai",
+	lazy = false,
 	priority = 1000,
 	config = function()
-		local transparent = true
-		-- local theme = "auto" -- default, light, auto
-		local theme = "deep" -- default, light, auto
-		-- local borderless_telescope = true
-
-		require("onedark").setup({
-			transparent = transparent,
-			style = theme,
-			-- borderless_telescope = borderless_telescope,
-			-- theme = { variant = theme },
-		})
-
-		vim.cmd("colorscheme onedark")
+		-- Optionally configure and load the colorscheme
+		-- directly inside the plugin declaration.
+		vim.g.sonokai_enable_italic = true
+		vim.g.sonokai_style = "default"
+		vim.g.sonokai_transparent_background = 1
+		vim.cmd.colorscheme("sonokai")
 	end,
 }
