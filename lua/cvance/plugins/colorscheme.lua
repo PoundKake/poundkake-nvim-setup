@@ -3,7 +3,7 @@ return {
 	priority = 1000,
 	config = function()
 		local transparent = true
-		local theme = "light" -- default, light, auto
+		local theme = "auto" -- default, light, auto
 		local borderless_telescope = true
 
 		require("cyberdream").setup({
