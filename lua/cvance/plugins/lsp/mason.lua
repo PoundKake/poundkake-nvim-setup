@@ -27,22 +27,10 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"ansiblels",
 				"ast_grep",
-				"html",
-				"cssls",
-				"tailwindcss",
-				"svelte",
-				"lua_ls",
-				"graphql",
-				"emmet_ls",
-				"pyright",
 				"eslint",
 				"vtsls",
 				"jsonls",
-				"ltex",
-				"texlab",
-				"textlsp",
 				"sqlls",
 				"yamlls",
 				"volar",
@@ -57,7 +45,6 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"isort", -- python formatter
 				"black", -- python formatter
 				"pylint",
 				-- "rubocop", -- ruby formatter/linter
