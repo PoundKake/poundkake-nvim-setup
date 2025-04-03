@@ -35,6 +35,7 @@ return {
 				"yamlls",
 				"volar",
 				"ts_ls",
+				"marksman",
 				-- "vuels",
 				-- "ruby_lsp",
 				-- "solargraph",
@@ -47,6 +48,7 @@ return {
 				"stylua", -- lua formatter
 				"black", -- python formatter
 				"pylint",
+				"mdformat",
 				-- "rubocop", -- ruby formatter/linter
 			},
 		})

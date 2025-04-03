@@ -16,10 +16,10 @@ return {
 				json = { "prettier" },
 				vue = { "prettier" },
 				yaml = { "prettier" },
-				markdown = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
+        markdowm = { "mdformat" },
 				python = { "isort", "black" },
 			},
 			format_on_save = {
