@@ -36,9 +36,6 @@ return {
 				"volar",
 				"ts_ls",
 				"marksman",
-				-- "vuels",
-				-- "ruby_lsp",
-				-- "solargraph",
 			},
 		})
 
@@ -49,7 +46,6 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"mdformat",
-				-- "rubocop", -- ruby formatter/linter
 			},
 		})
 	end,
