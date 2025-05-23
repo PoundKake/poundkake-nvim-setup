@@ -79,9 +79,7 @@ return {
 		end
 
 		mason_lspconfig.setup({
-			ensure_installed = {
-				"volar",
-			},
+			ensure_installed = {},
 		})
 
 		-- mason_lspconfig.setup_handlers({

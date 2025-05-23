@@ -33,7 +33,6 @@ return {
 				"jsonls",
 				"sqlls",
 				"yamlls",
-				"volar",
 				"ts_ls",
 				"marksman",
 			},
