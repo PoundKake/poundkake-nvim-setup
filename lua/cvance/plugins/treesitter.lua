@@ -41,7 +41,6 @@ return {
 				"arduino",
 				"dockerfile",
 				"gitignore",
-				"vimdoc",
 				"c",
 				"cpp",
 				"sql",
