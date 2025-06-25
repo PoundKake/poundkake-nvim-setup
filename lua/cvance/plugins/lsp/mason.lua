@@ -45,6 +45,7 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"mdformat",
+				-- "csharpier", -- csharp formatter
 			},
 		})
 	end,
