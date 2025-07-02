@@ -35,6 +35,7 @@ return {
 				"yamlls",
 				"ts_ls",
 				"marksman",
+				"rust_analyzer",
 			},
 		})
 
