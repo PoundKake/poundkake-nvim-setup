@@ -44,8 +44,8 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"black", -- python formatter
-				"pylint",
 				"mdformat",
+				"ruff",
 				-- "csharpier", -- csharp formatter
 			},
 		})
