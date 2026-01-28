@@ -11,7 +11,7 @@ return {
 			javascriptreact = { "eslint" },
 			typescriptreact = { "eslint" },
 			svelte = { "eslint" },
-			python = { "pylint" },
+			python = { "ruff" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

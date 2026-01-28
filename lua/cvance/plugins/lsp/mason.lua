@@ -33,7 +33,6 @@ return {
 				"jsonls",
 				"sqlls",
 				"yamlls",
-				"ts_ls",
 				"marksman",
 				"rust_analyzer",
 			},
@@ -43,8 +42,8 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"black", -- python formatter
-				"mdformat",
+				-- "black", -- python formatter
+				-- "mdformat",
 				"ruff",
 				-- "csharpier", -- csharp formatter
 			},

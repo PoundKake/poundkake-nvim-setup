@@ -31,5 +31,7 @@ return {
 			"vue",
 			"python",
 		},
+		highlight = { enable = true },
+		indent = { enable = true },
 	},
 }

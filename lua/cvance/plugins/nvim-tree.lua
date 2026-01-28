@@ -8,8 +8,7 @@ return {
 		vim.g.loaded_netrwPlugin = 1
 		nvimtree.setup({
 			view = {
-				-- width = 40,
-				adaptive_size = true,
+				width = 40,
 				relativenumber = true,
 			},
 			renderer = {
