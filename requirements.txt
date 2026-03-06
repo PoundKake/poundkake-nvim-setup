@@ -1,4 +1,5 @@
 # Python tools for Neovim
+# NOTE:  UV is required for these tools
 # Install each with: uv tool install <package>
 # Or install all at once: cat requirements.txt | grep -v '^#' | xargs -I {} uv tool install {}
 
