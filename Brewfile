@@ -2,7 +2,7 @@
 # Install all with: brew bundle --file=Brewfile
 
 # Core
-brew "neovim"
+# brew "neovim" # Follow Neovim documentation for installation. Should be v0.11+
 brew "git"
 brew "lazygit"
 
@@ -18,10 +18,10 @@ brew "marksman"  # markdown
 brew "stylua"    # lua
 
 # Node (for npm-based LSP servers and tools)
-brew "nvm"
+# brew "nvm" # Follow NVM documentation for installing this tool and node and npm versions with nvm.
 
 # Rust (for rust_analyzer)
-brew "rustup"
+# brew "rustup" # Follow rustup documentation for installation
 
 # -----------------------------------------------------------------------------
 # After brew bundle, run the following:
