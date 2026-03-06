@@ -76,7 +76,7 @@ return {
 		})
 
 		-- Configure LSP servers using vim.lsp.config (Neovim 0.11+)
-		local servers = { "ast_grep", "eslint", "jsonls", "sqlls", "yamlls", "marksman", "rust_analyzer" }
+		local servers = { "ast_grep", "eslint", "jsonls", "sqlls", "yamlls", "marksman", "rust_analyzer", "ty" }
 		for _, server in ipairs(servers) do
 			vim.lsp.config(server, { capabilities = capabilities })
 		end
