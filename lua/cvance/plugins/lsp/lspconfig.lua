@@ -82,7 +82,8 @@ return {
 		end
 
 		-- vtsls with @vue/typescript-plugin for Vue hybrid mode support
-		local vue_language_server_path = vim.fn.expand("$HOME/.nvm/versions/node/v24.13.0/lib/node_modules/@vue/language-server")
+		local vue_language_server_path =
+			vim.fn.expand("$HOME/.nvm/versions/node/v24.13.0/lib/node_modules/@vue/language-server")
 		vim.lsp.config("vtsls", {
 			capabilities = capabilities,
 			filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
