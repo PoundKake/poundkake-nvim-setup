@@ -43,13 +43,17 @@ return {
 				keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
 
 				opts.desc = "Go to previous diagnostic"
-				keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+				keymap.set("n", "[d", function()
+					vim.diagnostic.jump({ count = -1, float = true })
+				end, opts)
 
 				opts.desc = "Go to next diagnostic"
-				keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+				keymap.set("n", "]d", function()
+					vim.diagnostic.jump({ count = 1, float = true })
+				end, opts)
 
 				opts.desc = "Show documentation for what is under cursor"
-				keymap.set("n", "K", vim.lsp.buf.hover, opts)
+				keymap.set("n", "<leader>K", vim.lsp.buf.hover, opts)
 
 				opts.desc = "Restart LSP"
 				keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
@@ -106,36 +110,6 @@ return {
 		-- Vue language server (hybrid mode — handles HTML/CSS, vtsls handles TS/JS)
 		vim.lsp.config("vue_ls", {
 			capabilities = capabilities,
-			on_init = function(client)
-				local retries = 0
-				local function typescriptHandler(_, result, context)
-					local ts_client = vim.lsp.get_clients({ bufnr = context.bufnr, name = "vtsls" })[1]
-						or vim.lsp.get_clients({ bufnr = context.bufnr, name = "ts_ls" })[1]
-						or vim.lsp.get_clients({ bufnr = context.bufnr, name = "typescript-tools" })[1]
-
-					if not ts_client then
-						if retries <= 30 then
-							retries = retries + 1
-							vim.defer_fn(function()
-								typescriptHandler(_, result, context)
-							end, 200)
-						end
-						return
-					end
-
-					local param = unpack(result)
-					local id, command, payload = unpack(param)
-					ts_client:exec_cmd({
-						title = "vue_request_forward",
-						command = "typescript.tsserverRequest",
-						arguments = { command, payload },
-					}, { bufnr = context.bufnr }, function(_, r)
-						local response_data = { { id, r and r.body } }
-						client:notify("tsserver/response", response_data)
-					end)
-				end
-				client.handlers["tsserver/request"] = typescriptHandler
-			end,
 		})
 
 		-- Enable all configured servers
