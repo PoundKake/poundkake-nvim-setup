@@ -2,7 +2,15 @@ return {
 	"numToStr/Comment.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"JoosepAlviste/nvim-ts-context-commentstring",
+		{
+			"JoosepAlviste/nvim-ts-context-commentstring",
+			init = function()
+				-- Skip the legacy nvim-treesitter module registration; it does not
+				-- exist on nvim-treesitter `main`. Must be set before the plugin loads.
+				vim.g.skip_ts_context_commentstring_module = true
+			end,
+			opts = {},
+		},
 	},
 	-- TODO: Normal Mode Usage
 	-- `gcc` - Toggles the current line using linewise comment
